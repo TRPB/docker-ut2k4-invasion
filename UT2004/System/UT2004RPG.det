@@ -1,0 +1,308 @@
+[Public]
+Object=(Class=Class,MetaClass=Engine.Mutator,Name=UT2004RPG.MutUT2004RPG,Description="UT2004 mit einem beständigen Erfahrungssystem, Magischen Waffen, und Artefakten.")
+Object=(Class=class,MetaClass=Xinterface.GUIUserKeyBinding,Name=UT2004RPG.UT2004RPGKeyBinding)
+
+[AbilityAdrenalineRegen]
+AbilityName="Tröpfelndes Adrenalin"
+Description="Gibt dem Spieler 5 Adrenalin pro Sekunde pro Punkt. Wirkt nicht wenn Adrenalin Combos aktiviert sind. Man muss je 25 Punkte in den Adrenalin Max Stat investiert haben um eine Stufe dieser Fähigkeit kaufen zu können. (Max Level: 3)"
+
+[AbilityAdrenalineSurge]
+AbilityName="Adrenalin Schub"
+Description="Für jedes Level dieser Fertigkeit bekommt man 50% mehr Adrenalin beim Töten eines Gegners. Man muss mindestens 50 Punkte in das Schadens Bonus Attribut und mindestens 150 Punkte in Maximales Adrenalin investiert haben um diese Fähigkeit zu kaufen. (Max Level: 2)"
+
+[AbilityAirControl]
+AbilityName="Meister der Lüfte"
+Description="Erhöht die Air Control des Spielers um 50% pro Level. Das Level des Spielers muss mindestens zehnmal so hoch sein wie das Level der Fähigkeit die man erwerben möchte. (Max Level: 4)"
+
+[AbilityAmmoRegen]
+AbilityName="Nachschub"
+Description="Fügt jeder Waffe in ihrem Besitz alle 3 Sekunden 1 Einheit Munition pro Level hinzu. Superwaffen und der Translocator provitieren von diesem Effekt nicht. Das Maximale Munitionsmenge Attribut muss mindestens auf Stufe 50 sein um diese Fähigkeit kaufen zu können. (Max Level: 4)"
+
+[AbilityAwareness]
+AbilityName="Erkenntnis"
+Description="Die Lebenspunkte des Feindes werden über seinem Kopf angezeigt. Auf Stufe 1 bekommt man einen farbigen Indikator (grün, gelb oder rot). Auf Stufe 2 sieht man einen farbigen Lebensbalken und einen Schildbalken. Man muss mindestens 5 Punkte in jedes Attribut investiert haben um diese Fähigkeit kaufen zu können. (Max Level: 2)"
+
+[AbilityCounterShove]
+AbilityName="Gegenstoß"
+Description="Immer wenn ihnen ein anderer Spieler Schaden zufügt werden 25% (oder 150% auf Level 5) der Bewegungsenergie auf diesen Spieler zurückgeworfen. Wirkt nicht auf einen Gegenstoß. Das Attribut Schadens Reduzierung muss mindestens Stufe 50 sein um diese Fähigkeit kaufen zu können. (Max Level: 5)"
+
+[AbilityFastWeaponSwitch]
+AbilityName="Flinkfinger"
+Description="Mit jeder erreichten Stufe dieser Fähigkeit wechselt man 50% schneller die Waffen. Das Attribut Schussfrequenz muss mindestens Stufe 50 sein bevor man diese Fähigkeit kaufen kann. (Max Level: 2)"
+
+[AbilityGhost]
+AbilityName="Geisterform"
+Description="Wenn man das erste mal nach einem Spawn Schaden zugefügt bekommt der normalerweise zum Tod führen würde, entsteht eine Geisterscheinung die zu einem anderen Ort auf der Map läuft, an der der Spieler wieder ins Leben zurückkehrt anstatt zu sterben. Auf Stufe 1 ist die Geschwindigkeit des Geistes sehr langsam und man startet mit 1 HP. Auf Stufe 2 ist die Bewegungsgeschwindigkeit leicht erhöht und man startet wieder mit 100 HP. Auf Stufe 3 ist die Bewegungsgeschwindigkeit hoch und man startet mit der normalen Anzahl an Lebenspunkten. Die Attribute Lebensenergie Bonus und Schadens Reduzierung müssen mindestens Stufe 200 und 100 sein um diesen Skill kaufen zu können. Ultima und Geisterform können nicht gleichzeitig aktiviert sein. (Max Level: 3)"
+
+[AbilityHoarding]
+AbilityName="Hoarding"
+Description="Diese Fähigkeit erlaubt ihnen Items aufzusammeln, auch wenn Sie sie nicht benötigen. Es müssen mindestens 5 Punkte in jedes Attribut investiert worden sein um diese Fähigkeit erlernen zu können. (Max Level: 1)"
+
+[AbilityJumpZ]
+AbilityName="Super Sprung"
+Description="Erhöht die Sprunghöhe um 10% pro Stufe. Der Effekt der Adrenalin-Kombo "Speed" addiert sich zu dieser Fähigkeit. Um eine Stufe in dieser Fähigkeit aufzusteigen, muss das Charakterlevel mindestens 10 mal so groß sein wie die gewünschte Stufe. (Max Level: 3)"
+
+[AbilityListFont]
+FontArrayNames=("UT2003Fonts.FontSmallText","UT2003Fonts.FontNeuzeit9","UT2003Fonts.FontNeuzeit11","UT2003Fonts.FontNeuzeit14")
+
+[AbilityMonsterSummon]
+AbilityName="Bestienmeister"
+Description="Mit dieser Fähigkeit können Sie Monster dazu überzeugen Ihnen Hilfe zu leisten. Ein Monster wird erscheinen, ihnen folgen, und jeden Gegner der in Sichtweite kommt angreifen! Wenn es stirbt wird ein anderes erscheinen und seinen Platz einnehmen. Der Spieler erhält die Erfahrung und Punkte für die Kills des Monster gutgeschrieben. Die Stufe der Fähigkeit bestimmt die Art des Monster das Sie unterstützen wird. Zusätzlich profitiert das Monster von den Attributen und Fähigkeiten des Spielers, mit Ausnahme der Fähigkeiten die erst beim Tod des Spielers einsetzen. Die Attribute Schadens Bonus und Schadens Reduzierung müssen mindestens auf Stufe 75 sein um diese Fähigkeit kaufen zu können. (Max Level: 8)"
+
+[AbilityNoWeaponDrop]
+AbilityName="Verweigern"
+Description="Die erste Stufe dieses Skills verhindert das sie Ihre Waffe verlieren, sollten sie sterben (aber Sie können sie auch nicht behalten). Mit der 2. Stufe dieser Fähigkeit spawnen sie mit der Waffe und der Munition die sie benutzten als sie starben. Um diese Fähigkeit erwerben zu können müssen sie mindestens Stufe 25 sein. (Max Level: 2)"
+
+[AbilityReduceFallDamage]
+AbilityName="Stahlbeine"
+Description="Erhöht die Entfernung die Sie fallen können ohne Schaden zu nehmen um 25 % pro Level. Zusätzlich reduziert es den Fallschaden den Sie erleiden wenn sie über größere Distanzen fallen als Sie aushalten können. Das Level Ihres Attributes Lebensenergie Bonus muss 50 oder höher sein um diese Fähigkeit zu kaufen. (Max Level: 4)"
+
+[AbilityReduceSelfDamage]
+AbilityName="Umsicht"
+Description="Verringert den Schaden den Sie sich selbst zufügen um 15% pro Level. Die Attribute Lebensenergie Bonus und Schadens Reduzierung müssen mindestens Stufe 50 und 25 sein um diese Fähigkeit kaufen zu können. (Max Level: 5)"
+
+[AbilityRegen]
+AbilityName="Regeneration"
+Description="Heilt einen Lebenspunkt pro Sekunde pro Level. Heilt nur bis zur Startlebensenergie. Ihr Attribut Lebensenergie Bonus muss mindestens 30 mal so groß sein wie das Level der Fähigkeit Regeneration die sie haben möchten bevor Sie es kaufen können. (Max Level: 5)"
+
+[AbilityRetaliate]
+AbilityName="Vergeltung"
+Description="Jedesmal wenn Ihnen ein anderer Spieler Schaden zufügt werden 5% dieses Schadens auf den angreifenden Spieler zurückgeworfen. Ihr Attribut Schadens Bonus und das Schadens Reduzierungs Attribut des Gegners werden auf dieses Wert berechnet. Schaden der durch die Fähigkeit Vergeltung ausgelöst wird aktiviert Vergeltung nicht. Das Attribut Schadens Reduzierung muss mindestens Stufe 50 sein um diese Fähigkeit kaufen zu können. (Max Level: 10)"
+
+[AbilityShieldStrength]
+AbilityName="Schild Verstärker"
+Description="Erhöht den Maximalwert des Schildes um 25 pro Stufe. Sie müssen einen Lebensenergie Bonus von 100 haben um diese Fähigkeit kaufen zu können. (Max Level: 4)"
+
+[AbilitySmartHealing]
+AbilityName="Heilkundiger"
+Description="Alle heilenden Items (z.B. Medipacks) heilen 25% mehr Lebenspunkte pro Fertigkeitenstufe. Sie benötigen einen Lebensenergie Bonus von mindestens 50 und 25 Punkte in Maximale Munitionsmenge um diese Fähigkeit zu kaufen. (Max Level: 4)"
+
+[AbilitySpeed]
+AbilityName="Schnelligkeit"
+Description="Erhöht Ihre Bewegungsgeschwindigkeit in allen Umgebungen um 5% pro Level. Der Effekt des "Speed" Adrenalin-Kombos wird zu dem Effekt dieser Fähigkeit addiert. Das Charakterlevel muss 10 mal so hoch sein wie die Fähigkeitenstufe die sie kaufen möchten. (Max Level: 4)"
+
+[AbilityUltima]
+AbilityName="Ultima"
+Description="Diese Fähigkeit wandelt Ihren Körper in pure Energie um wenn Sie sterben. Die Energie sammelt sich an einem Punkt und wird dort eine nukleare Explosion auslösen. Stufe 2 dieser Fähigkeit verdoppelt die Geschwindigkeit mit der sich die Energie sammelt. Die Fähigkeit wird nur ausgelöst wenn sie mindestens einen Gegner getötet haben. Ihr Attribut Schadens Bonus muss mindestens auf Stufe 250 sein um diese Fähigkeit erlernen zu können. Ultima und Geisterform können nicht zur gleichen Zeit aktiv sein. (Max Level: 2)"
+
+[AbilityVampire]
+AbilityName="Vampirismus"
+Description="Immer wenn sie einem anderen Spieler Schaden zufügen bekommen sie 5% ihres Schadens als Lebenspunkte gutgeschrieben (Bis zu Ihrer Startlebensenergie + 50). Mit jeder neuen Stufe der Fähigkeit werden 5% mehr Schaden umgewandelt. Schaden den Sie sich selbst zufügen oder der von der Fähigkeit Vergeltung zugefügt wird, wird nicht in Lebenspunkte umgewandelt. Das Attribut Schadens Bonus muss mindestens Stufe 50 sein um diese Fähigkeit kaufen zu können. (Max Level: 10)"
+
+[ArtifactFlight]
+NotInVehicleMessage="Sorry, Fahrzeuge tragen an und für sich keine Schuhe."
+ItemName="Schuhe des Schwebens"
+
+[ArtifactFlightPickup]
+PickupMessage="Sie haben die Schuhe des Schwebens!"
+
+[ArtifactInvulnerability]
+ItemName="Kugel der Unverwundbarkeit"
+
+[ArtifactInvulnerabilityPickup]
+PickupMessage="Sie haben die Kugel der Unverwundbarkeit!"
+
+[ArtifactLightningRod]
+ItemName="Blitzstab"
+
+[ArtifactLightningRodPickup]
+PickupMessage="Sie haben den Blitzstab!"
+
+[ArtifactMonsterSummon]
+TooManyMonstersMessage="Der Zauber der Beschwörung kann keine Monster mehr in diese Welt rufen."
+ItemName="Zauber der Beschwörung"
+
+[ArtifactMonsterSummonPickup]
+PickupMessage="Sie haben den Zauber der Beschwörung!"
+
+[ArtifactTeleport]
+ItemName="Teleporter"
+
+[ArtifactTeleportPickup]
+PickupMessage="Sie haben den Teleporter!"
+
+[ArtifactTripleDamage]
+ItemName="Dreifacher Schaden"
+
+[ArtifactTripleDamagePickup]
+PickupMessage="Sie haben das Dreifacher Schaden Artefakt!"
+
+[DamTypeLightningRod]
+DeathString="%o wurde von %k's Blitzstab geröstet."
+FemaleSuicide="%o hatte eine elektrisierende Erfahrung."
+MaleSuicide="%o hatte eine elektrisierende Erfahrung."
+
+[DamTypePoison]
+DeathString="%o konnte nicht rechtzeitig ein Gegengift für %k's Gift auftreiben."
+FemaleSuicide="%o vergiftete sich selbst."
+MaleSuicide="%o vergiftete sich selbst."
+
+[DamTypeRetaliation]
+DeathString="%k's Vergeltungsschlag war zuviel für %o."
+
+[DamTypeUltima]
+DeathString="%o wurde von %k's Rache atomisiert!"
+FemaleSuicide="%o wurde atomisiert!"
+MaleSuicide="%o wurde atomisiert!"
+
+[ExperiencePickup]
+PickupMessage="Erfahrung +"
+
+[GainLevelMessage]
+LevelString=" ist nun Stufe "
+SomeoneString=" jemand "
+
+[IdentifyMessage]
+IdentifyString="Ihre Waffe ist ein"
+PickupString="Sie haben die/den"
+
+[LevelUpHUDMessage]
+LevelUpString="Sie haben Attributpunkte zu verteilen!"
+PressLString="(Drücke L)"
+
+[MutUT2004RPG]
+PropsDisplayText[0]="Autosave Intervall (sekunden)"
+PropsDisplayText[1]="Start Stufe"
+PropsDisplayText[2]="Attributpunkte pro Level"
+PropsDisplayText[3]="Divisor zu Erfahrungsmenge von Levelunterschied"
+PropsDisplayText[4]="Erfahrung für Sieg"
+PropsDisplayText[5]="Falsche Bot Level"
+PropsDisplayText[6]="Spieler Daten zum nächsten Spiel zurücksetzen"
+PropsDisplayText[7]="Chance auf Magische Waffe"
+PropsDisplayText[8]="Magische Startwaffen"
+PropsDisplayText[9]="Keine Unidentifizierten Waffen"
+PropsDisplayText[10]="Selbsteinstellendes Monster Level bei Invasion"
+PropsDisplayText[11]="Monster Anpassungs Faktor"
+PropsDisplayText[12]="Maximale Level Up Effekte auf einmal"
+PropsDisplayText[13]="Attribut Einschränkungen"
+PropsDisplayText[14]="Ubegrenzte Benötigt Erfahrung Art"
+PropsDisplayText[15]="Ubegrenzte Benötigte Erfahrung Wert"
+PropsDisplayText[16]="Benötigte Erfahrungspunkte für jedes Level"
+PropsDisplayText[17]="Erlaubte Fähigkeiten"
+PropsDisplayText[18]="Hartei Modus"
+PropsDisplayText[19]="Benutzt den offiziellen Redirect Server"
+PropsDisplayText[20]="Extra Bot Levelups nach dem Spiel"
+PropsDescText[0]="Während des Spiels werden alle Informationen alle x Sekunden gespeichert."
+PropsDescText[1]="Neue Spieler starten mit diesem Level."
+PropsDescText[2]="Die Anzahl an Attributpunkten die man pro Level Up vergeben kann."
+PropsDescText[3]="Niedrigere Werte = mehr Erfahrung wenn man einen höherstufigen Charakter tötet."
+PropsDescText[4]="Die Erfahrung die die Spieler für einen Sieg erhalten."
+PropsDescText[5]="Wenn aktiviert werden Informationen zu Bots nicht gespeichert. Bots wird ein Level in der Größenordnung der menschlichen Spieler zugewiesen."
+PropsDescText[6]="Wenn aktiviert werden alle Spieler Daten vor dem nächsten Spiel zurückgesetzt."
+PropsDescText[7]="Wahrscheinlichkeit das eine aufgehobene Waffe magische Fertigkeiten hat"
+PropsDescText[8]="Wenn aktiviert können Startwaffen magische Eigenschaften haben."
+PropsDescText[9]="Wenn aktiviert werden magische Waffen automatisch identifiziert."
+PropsDescText[10]="Wenn aktiviert stellt sich das Level der Monster im Spielmodus Invasion automatisch anhand des niedrigsten Levels eines Spielers ein."
+PropsDescText[11]="Monster im Spielmodus Invasion werden an diesen Teil des niedrigsten Levels eines Spielers angepasst."
+PropsDescText[12]="Die maximale Anzahl von Level Up Partikel Effekten die gleichzeitig auf einem Charakter gespawnt werden können."
+PropsDescText[13]="Maximalwert der Attribute einstellen. Werte <0 bedeuten keine Begrenzung. Die Attribute sind: 1: Schussgeschwindigkeit 2: Lebensenergie Bonus 3: Maximales Adrenalin 4: Schadens Bonus 5: Schadens Reduzierung 6: Maximale Munitionsmenge"
+PropsDescText[14]="Erlaubt ihnen die benötigte Menge Erfahrung zum Levelaufstieg kontinuierlich zu erhöhen, unabhängig davon welches Level man wird. Diese Option legt fest wie die benötigte Erfahrungsmenge steigt."
+PropsDescText[15]="Erlaubt ihnen die benötigte Menge Erfahrung zum Levelaufstieg kontinuierlich zu erhöhen, unabhängig davon welches Level man wird. Diese Option ist der Wert für die Art die in der vorherigen Option ausgewählt wird."
+PropsDescText[16]="Verändert die Erfahrungsmenge die für jedes Level benötigt wird. Level die höher sind als das letzte in der Liste festgelegte benutzen den letzten Wert der in der Liste festgelegt wurde."
+PropsDescText[17]="Verändert die Liste der Fähigkeiten aus denen Spieler wählen können."
+PropsDescText[18]="Wenn aktiviert werden nur die Daten des Siegerteams gespeichert - Die Verliere verlieren alle Erfahrungspunkte die sie in diesem Spiel gewonnen haben."
+PropsDescText[19]="Wenn aktiviert leitet der Server Clients zu einem speziellen Redirect Server für UT2004RPG Dateien um (alle andere Dateien benutzen weiterhin den normalen Redirect Server, sollte einer vorhanden sein)"
+PropsDescText[20]="Wenn Falsche Bot Level ausgeschalten ist erhalten Bots so viele Extra Level Ups nach einem Spiel, da die einzelnen Bots nicht allzu oft spielen."
+PropsExtras="0;Wert eingeben;1;Prozentsatz eingeben"
+FriendlyName="UT2004 RPG"
+Description="UT2004 mit einem beständigen Erfahrungssystem, Magischen Waffen, und Artefakten."
+
+[RPGAbilityDescMenu]
+WindowName="Fähigkeiten"
+ButtonClose.Caption="Schließen"
+
+[RPGArtifact]
+NotEnoughAdrenalineMessage="Sie haben nicht genug Adrenalin um dieses Artefakt zu aktivieren."
+ExpireMessage="Sie haben kein Adrenalin mehr."
+
+[RPGArtifactManager]
+PropsDisplayText[0]="Maximale Anzahl Artefakte"
+PropsDisplayText[1]="Artefakt Spawn Verzögerung"
+PropsDisplayText[2]="Maximale Anzahl Artefakte pro Spieler"
+PropsDescText[0]="Maximale Anzahl an Artefakten die gleichzeitig in einem Level sein können."
+PropsDescText[1]="Spwant ein Artefakt alle x Sekunden."
+PropsDescText[2]="Die maximale Anzahl an Artefakten die ein Spieler tragen kann (0 für unbegrenzt viele)"
+
+[RPGDamageConditionMessage]
+PoisonMessage="Sie sind vergiftet!"
+
+[RPGInteraction]
+LevelText="Level:"
+StatsMenuText="Drücke L für Attribut/Level Up Menü"
+ArtifactText="U benutzt Artefakt, Klammern wechseln zwischen Artefakten"
+
+[RPGNameMessage]
+ImposterString="Sorry, dieser Name wird schon von jemanden benutzt der auf diesem Server spielt."
+NoNameChangeString="Sorry, man kann seinen Namen nur ändern wenn man tot ist."
+
+[RPGPlayerLevelsMenu]
+DefaultText="Beziehe Spieler Level vom Server..."
+WindowName="Spieler Levels"
+ButtonClose.Caption="Schließen"
+
+[RPGResetConfirmPage]
+NoButton.Caption="NEIN"
+ResetDesc.Caption="Daten Reset ist PERMANENT! Sie werden alle ihre Levels VERLIEREN!"
+ResetDesc2.Caption="Sind Sie SICHER?"
+YesButton.Caption="YES"
+
+[RPGStatsMenu]
+CurrentLevelText="Aktuelles Level:"
+MaxText="MAX"
+CostText="Kosten:"
+CantBuyText="Nicht möglich"
+AbilityBuyButton.Caption="Erlernen"
+AbilityDescButton.Caption="Info"
+AbilityList.Hint="Das sind die Fähigkeiten die sie mithilfe der Attributpunkte kaufen können."
+AdrenalineMaxButton.Caption="+"
+AdrenalineMaxSelect.Caption="Max Adrenalin"
+AmmoMaxButton.Caption="+"
+AttackButton.Caption="+"
+AttackSelect.Caption="Schadens Bonus (0.5%)"
+CloseButton.Caption="Schließen"
+DefenseButton.Caption="+"
+DefenseSelect.Caption="Schadens Reduzierung (0.5%)"
+EXPLabel.Caption="Erfahrung:"
+HealthBonusButton.Caption="+"
+HealthBonusSelect.Caption="Lebensenergie Bonus"
+LevelLabel.Caption="Level:"
+LevelsButton.Caption="Betrachte Spieler Level"
+MaxAmmoSelect.Caption="Max Munitionsmenge Bonus (%)"
+PointsAvailableSelect.Caption="Attributpunkte verfügbar"
+ResetButton.Caption="Zurücksetzen"
+TitleBar.Caption="Statistik Verbesserung"
+WeaponSpeedButton.Caption="+"
+WeaponSpeedSelect.Caption="Schussfrequenz Bonus (%)"
+
+[RW_Energy]
+PostfixPos=" der Energie"
+PrefixNeg="Entziehende "
+
+[RW_Force]
+PostfixPos=" der Gewalt"
+
+[RW_Healing]
+PrefixPos="Heilende "
+
+[RW_Infinity]
+PostfixPos=" der Unendlichkeit"
+
+[RW_Luck]
+PrefixPos="Glückliche "
+PostfixNeg=" des Unglücks"
+
+[RW_NoMomentum]
+PrefixPos="Standfeste "
+
+[RW_Penetrating]
+PrefixPos="Durchdringende "
+
+[RW_Piercing]
+PrefixPos="Durschlagende "
+
+[RW_Poison]
+PrefixPos="Vergiftete "
+
+[RW_Protection]
+PostfixPos=" des Schutzes"
+

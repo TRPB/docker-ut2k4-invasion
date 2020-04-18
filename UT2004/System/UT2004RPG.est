@@ -1,0 +1,314 @@
+[Public]
+Object=(Class=Class,MetaClass=Engine.Mutator,Name=UT2004RPG.MutUT2004RPG,Description="Unreal Tournament 2004 con un sistema consistente de niveles de experiencia, armas mágicas y artefactos.")
+Object=(Class=class,MetaClass=Xinterface.GUIUserKeyBinding,Name=UT2004RPG.UT2004RPGKeyBinding)
+
+[AbilityAdrenalineRegen]
+AbilityName="Goteo de Adrenalina"
+Description="Da 1 de adrenalina cada 5 segundos por nivel. No da adrenalina mientras se efectúa un combo de adrenalina. Debes haber gastado 25 puntos en tu Estadística de Máximo de Adrenalina por cada nivel de esta habilidad que quieras comprar. (Nivel Max: 3)"
+
+[AbilityAdrenalineSurge]
+AbilityName="Aumento de Adrenalina"
+Description="Por cada nivel de esta habilidad, consigues un 50% más de adrenalina de todas los bonificaciones de adrenalina relacionadas con las muertes. Debes tener al menos la Estadística de Mejora del Daño a 50 y la de Máximo de Adrenalina a 150 para poder comprar esta habilidad. (Nivel Max: 2)"
+
+[AbilityAirControl]
+AbilityName="Maestro del Aire"
+Description="Incrementa tu control aéreo en un 50% por nivel. Para comprarla, tu Nivel debe ser 10 veces superior al de la habilidad Maestro del Aire que quieras comprar. (Nivel Max: 4)"
+
+[AbilityAmmoRegen]
+AbilityName="Reabastecimiento"
+Description="Añade 1 de munición cada 3 segundos por nivel a cada tipo de munición que tengas. No da munición a las superarmas o al translocalizador. Debes tener al menos la Estadística de Máximo de Munición a 40 para comprar esta habilidad. (Nivel Max: 4)"
+
+[AbilityAwareness]
+AbilityName="Conocimiento"
+Description="Te informa de la salud de tus enemigos visualizándola sobre sus cabezas. Con nivel 1 consigues un indicador coloreado (verde, amarillo o rojo). Con nivel 2 obtienes una barra de salud coloreada y otra de escudo. Necesitas tener al menos 5 puntos en cada Estadística para comprar esta habilidad. (Nivel Max: 2)"
+
+[AbilityCounterShove]
+AbilityName="Contragolpe"
+Description="Cuando seas dañado por otro jugador, el 25% del impacto en ese momento por nivel (o el 150% en el nivel 5) es recibido por el jugador que te hirió. No hay Contragolpe de un Contragolpe. Debes tener al menos la Estadística de Reducción de Daño a 50 para comprar esta habilidad. (Nivel Max: 5)" 
+
+[AbilityFastWeaponSwitch]
+AbilityName="Cambio Veloz"
+Description="Por cada nivel de esta habilidad, cambias de arma un 50% mas rápido. Necesitas tener al menos la Estadística Velocidad del Arma a 50 para comprar esta habilidad. (Nivel Max: 2)"
+
+[AbilityGhost]
+AbilityName="Fantasma"
+Description="La primera vez tras cada renacimiento que recibas un daño con el que tuvieras que morir, en lugar de morir te convertirás en un fantasma, y te moverás a una nueva posición, donde renacerás. En el nivel 1 te moverás muy lento como fantasma y retornarás con 1 de vida. En el nivel 2 te moverás bastante más rápido y retornarás con 100 de vida. En el nivel 3 te moverás muy veloz y retornarás con tu vida inicial. Necesitas tener al menos la Estadística de Mejora de Salud a 200, y la de Reducción de Daño a 100 para comprar esta habilidad. No puedes tener las habilidades Fantasma y Ultima al mismo tiempo. (Nivel Max: 3)"
+
+[AbilityHoarding]
+AbilityName="Aprovisionamiento"
+Description="Te permite coger objetos aunque no los necesites. Debes tener al menos 5 puntos en cada Estadística para comprar esta habilidad. (Nivel Max: 1)"
+
+[AbilityJumpZ]
+AbilityName="Salto Poderoso"
+Description="Incrementa tu altura de salto en un 10% por nivel. El combo de velocidad de Adrenalina anula este efecto. Debes tener un nivel igual a 10 veces el nivel de habilidad que quieras tener para poder comprarlo. (Nivel Max: 3)"
+
+[AbilityListFont]
+FontArrayNames=("UT2003Fonts.FontSmallText","UT2003Fonts.FontNeuzeit9","UT2003Fonts.FontNeuzeit11","UT2003Fonts.FontNeuzeit14")
+
+[AbilityMonsterSummon]
+AbilityName="Idioma Monstruos"
+Description="Con esta habilidad, puedes convencer a los monstruos para seguir tu causa. El monstruo aparecerá y te seguirá, atacando cualquier enemigo que vea, y si muere, otro vendrá a ocupar su lugar. Obtendrás la puntuación y experiencia de sus muertes. El nivel de habilidad determina el tipo de monstruo que te ayudará. Además, el monstruo tendrá los beneficios de todas tus estadísticas y habilidades, excepto de aquellas que actúan tras tu muerte. Debes tener al menos la Estadística de Mejora del Daño a 75 y la de Reducción de Daño a 75 para comprar esta habilidad. (Nivel Max: 8)"
+
+[AbilityNoWeaponDrop]
+AbilityName="Negativa"
+Description="El primer nivel de esta habilidad simplemente evita que tires tu arma al morir (pero no te las da después). El segundo nivel te permite renacer con el arma y la munición que estabas usando cuando moriste. Necesitas ser al menos Nivel 25 para comprar esta habilidad. (Nivel Max: 2)"
+
+[AbilityReduceFallDamage]
+AbilityName="Piernas de Hierro"
+Description="Incrementa la distancia desde la que puedes caer con seguridad en un 25% por nivel, y reduce el daño de caída mas allá de tus capacidades. Debes tener al menos la Estadística de Mejora de Salud a 50 para comprar esta habilidad. (Nivel Max: 4)"
+
+[AbilityReduceSelfDamage]
+AbilityName="Prudencia"
+Description="Reduce el daño a si mismo en un 15% por nivel. Debes tener al menos la Estadística de Mejora de Salud a 50 y la de Reducción de Daño a 25 para comprar esta habilidad. (Nivel Max: 5)"
+
+[AbilityRegen]
+AbilityName="Regeneración"
+Description="Cura 1 de vida por segundo por nivel. No cura por encima de la vida inicial. Debes tener al menos la Estadística de Mejora de Salud igual a 30 veces la habilidad que quieras tener para poder comprarla. (Nivel Max: 5)"
+
+[AbilityRetaliate]
+AbilityName="Represalia"
+Description="Cuando seas dañado por otro jugador, el 5% del daño por nivel recibido es reflejado al jugador que te hirió. Tu Estadística de Mejora del Daño y la de Reducción de Daño de tu oponente son aplicadas para este daño extra. Este daño extra no responde a otra Represalia. Debes tener al menos la Estadística de Reducción de Daño a 50 para comprar esta habilidad. (Nivel Max: 10)"
+
+[AbilityShieldStrength]
+AbilityName="¡Escudos Arriba!"
+Description="Incrementa el máximo de tu escudo en 25 por nivel. Necesitas tener al menos la Estadística de Mejora de Salud a 100 para comprar esta habilidad. (Nivel Max: 4)"
+
+[AbilitySmartHealing]
+AbilityName="Cura veloz"
+Description="Hace que los objetos de salud te curen un 25% más por nivel. Necesitas tener al menos la Estadística de Mejora de Salud a 50 y la de Máximo de Munición a 25 para comprar esta habilidad. (Nivel Max: 4)"
+
+[AbilitySpeed]
+AbilityName="Pies Rápidos"
+Description="Incrementa tu velocidad en todos los medios en un 5% por nivel. El combo de velocidad de adrenalina anula este efecto. Debes tener un nivel igual a 10 veces el nivel de habilidad que quieras tener para poder comprarla. (Nivel Max: 4)"
+
+[AbilityUltima]
+AbilityName="Ultima"
+Description="Esta habilidad provoca que tu cuerpo emita energía cuando mueres. Esta energía se concentrará en un punto donde causará una explosión nuclear similar a la del redentor. El nivel 2 de esta habilidad causa que la energía se concentre en la mitad de tiempo. La habilidad solo se dispara si has matado al menos a un enemigo durante esa vida. Necesitas tener al menos la Estadística de Mejora del Daño a 250 para comprar esta habilidad. No puedes tener las habilidades Fantasma y Ultima al mismo tiempo. (Nivel Max: 2)" 
+
+[AbilityVampire]
+AbilityName="Vampirismo"
+Description="Cuando dañes a otro jugador, recibirás salud por valor del 5% del daño provocado por nivel (hasta 50 puntos por encima de tu salud inicial). No puedes obtener salud haciéndote daño tu mismo, ni por el daño causado por la habilidad Represalia. Debes tener al menos la Estadística de Mejora del Daño a 50 para comprar esta habilidad. (Nivel Max: 10)"
+
+[ArtifactFlight]
+NotInVehicleMessage="Lo siento, los vehículos no pueden llevar botas."
+ItemName="Botas de Vuelo"
+
+[ArtifactFlightPickup]
+PickupMessage="¡Has cogido las Botas de Vuelo!"
+
+[ArtifactInvulnerability]
+ItemName="Globo de Invulnerabilidad"
+
+[ArtifactInvulnerabilityPickup]
+PickupMessage="¡Has cogido el Globo de Invulnerabilidad!"
+
+[ArtifactLightningRod]
+ItemName="Vara de Rayos"
+
+[ArtifactLightningRodPickup]
+PickupMessage="¡Has cogido la Vara de Rayos!"
+
+[ArtifactMonsterSummon]
+TooManyMonstersMessage="El Conjuro de Invocación no puede soportar más monstruos en este mundo."
+ItemName="Conjuro de Invocación"
+
+[ArtifactMonsterSummonPickup]
+PickupMessage="¡Has cogido el Conjuro de Invocación!"
+
+[ArtifactTeleport]
+ItemName="Teletransportador"
+
+[ArtifactTeleportPickup]
+PickupMessage="¡Has cogido el Teletransportador!"
+
+[ArtifactTripleDamage]
+ItemName="Triple Daño"
+
+[ArtifactTripleDamagePickup]
+PickupMessage="¡Has cogido el Triple Daño!"
+
+[DamTypeLightningRod]
+DeathString="%o se ha electrocutado con la Vara de Rayos de %k."
+FemaleSuicide="%o tuvo una experiencia electrizante."
+MaleSuicide="%o tuvo una experiencia electrizante."
+
+[DamTypePoison]
+DeathString="%o no encontró el antídoto para el veneno de %k."
+FemaleSuicide="%o se ha envenenado ella misma."
+MaleSuicide="%o se ha envenenado él mismo."
+
+[DamTypeRetaliation]
+DeathString="La represalia de %k fue demasiado dura para %o."
+
+[DamTypeUltima]
+DeathString="¡%o fue PULVERIZADO por el poder de la venganza de %k!"
+FemaleSuicide="¡%o fue PULVERIZADA!"
+MaleSuicide="¡%o fue PULVERIZADO!"
+
+[ExperiencePickup]
+PickupMessage="Experiencia +"
+
+[GainLevelMessage]
+LevelString=" es ahora Nivel "
+SomeoneString=" alguno "
+
+[IdentifyMessage]
+IdentifyString="Tu arma es una"
+PickupString="Tienes el"
+
+[LevelUpHUDMessage]
+LevelUpString="¡Tienes Puntos de Estadística por Asignar!"
+PressLString="(Pulsa L)"
+
+[MutUT2004RPG]
+PropsDisplayText[0]="Intervalo de Autoguardado (Seg)"
+PropsDisplayText[1]="Nivel Inicial"
+PropsDisplayText[2]="Puntos de Estadística por Nivel"
+PropsDisplayText[3]="Experiencia según la Diferencia de Nivel"
+PropsDisplayText[4]="Experiencia por Ganar"
+PropsDisplayText[5]="Niveles Falsos en los Bots"
+PropsDisplayText[6]="Reiniciar Datos de Jugador en la Prox. Partida"
+PropsDisplayText[7]="Posibilidad de Arma Mágica"
+PropsDisplayText[8]="Inicio con Armas Mágicas"
+PropsDisplayText[9]="No usar Objetos Sin Identificar"
+PropsDisplayText[10]="Autoajustar Nivel de Monstruos Invasores"
+PropsDisplayText[11]="Factor de Ajuste de Monstruos"
+PropsDisplayText[12]="Máximos Efectos de Subida de Nivel"
+PropsDisplayText[13]="Limite de Estadísticas"
+PropsDisplayText[14]="Operación de EXP Requerida Infinita"
+PropsDisplayText[15]="Valor de EXP Requerida Infinita"
+PropsDisplayText[16]="EXP requerida para cada Nivel"
+PropsDisplayText[17]="Habilidades Permitidas"
+PropsDisplayText[18]="Modo Hombre de Hierro"
+PropsDisplayText[19]="Usar el Servidor Oficial de Redirección"
+PropsDisplayText[20]="Niveles extra en Bots tras Partida"
+PropsDescText[0]="Durante el juego, todos los datos serán guardados una vez transcurridos estos segundos."
+PropsDescText[1]="Los nuevos jugadores empiezan en este nivel."
+PropsDescText[2]="El numero de puntos de estadística ganados al subir de nivel."
+PropsDescText[3]="Valores bajos = Más experiencia cuando matas a alguien de nivel superior."
+PropsDescText[4]="La Experiencia conseguida por ganar una partida."
+PropsDescText[5]="Si esta marcado, los datos de los bots no se guardarán. En su lugar se les dará un nivel cercano al de los jugadores humanos."
+PropsDescText[6]="Si esta marcado, los datos de los jugadores se reiniciarán antes de que comience la siguiente partida."
+PropsDescText[7]="Posibilidad de que cualquier arma obtenida tenga propiedades mágicas."
+PropsDescText[8]="Si esta marcado, las armas de los jugadores cuando renazcan podrán tener propiedades mágicas."
+PropsDescText[9]="Si esta marcado, las armas mágicas estarán siempre identificadas."
+PropsDescText[10]="Si esta marcado, el nivel de los monstruos invasores se ajustará al del jugador con mas bajo nivel."
+PropsDescText[11]="Los monstruos invasores se ajustaran según esta fracción del nivel del jugador mas débil."
+PropsDescText[12]="El numero máximo de efectos particulares que puede hacer a la vez un personaje."
+PropsDescText[13]="Límite de puntuación de las estadísticas. Los valores menores de 0 significan que no tienen límite. Las estadísticas son 1: Velocidad del Arma 2: Mejora de Salud 3: Máximo de Adrenalina 4: Mejora del Daño 5: Reducción de Daño 6: Máximo de Munición"
+PropsDescText[14]="Hace que la experiencia requerida para el siguiente nivel siempre aumente, no importa a que nivel se llegue. Esta opción controla el aumento de nivel."
+PropsDescText[15]="Hace que la experiencia requerida para el siguiente nivel siempre aumente, no importa a que nivel se llegue. Esta opción es el valor para la operación anterior."
+PropsDescText[16]="Cambia la experiencia requerida para cada nivel. Los niveles después del último en tu lista usaran el último valor de la lista."
+PropsDescText[17]="Cambia la lista de habilidades entre la que los jugadores pueden elegir."
+PropsDescText[18]="Si esta marcado, solo los datos del jugador (y los de su equipo) que haya ganado serán guardados. Los perdedores pierden la experiencia conseguida en esa partida."
+PropsDescText[19]="Si esta marcado, el servidor redirigirá a los clientes a un servidor oficial para archivos de UT2004RPG (el resto de archivos seguirán usándose desde el servidor normal)"
+PropsDescText[20]="Si la opción Niveles Falsos en los Bots no esta marcada, los bots ganarán algunos niveles después de cada encuentro, ya que estos no suelen jugar frecuentemente."
+PropsExtras="0;Añadir Valor;1;Añadir Porcentaje"
+FriendlyName="UT2004 RPG"
+Description="Unreal Tournament 2004 con un sistema consistente de niveles de experiencia, armas mágicas y artefactos."
+
+[RPGAbilityDescMenu]
+WindowName="Habilidad"
+ButtonClose.Caption="Cerrar"
+
+[RPGArtifact]
+NotEnoughAdrenalineMessage="No tienes suficiente adrenalina para usar este artefacto."
+ExpireMessage="Te has quedado sin adrenalina."
+
+[RPGArtifactManager]
+PropsDisplayText[0]="Máximo de Artefactos"
+PropsDisplayText[1]="Retraso de Aparición de Artefactos"
+PropsDisplayText[2]="Máximo de artefactos de un jugador"
+PropsDescText[0]="Máximo numero de artefactos en el mapa al mismo tiempo."
+PropsDescText[1]="Aparece un artefacto en el mapa una vez transcurridos estos segundos."
+PropsDescText[2]="El máximo número de artefactos que un jugador puede cargar a la vez (0 = Sin límite)."
+
+[RPGDamageConditionMessage]
+PoisonMessage="¡Estás Envenenado!"
+
+[RPGInteraction]
+LevelText="Nivel:"
+StatsMenuText="L para el Menú de Estadísticas"
+ArtifactText="U para Usar, ?/¿ para Cambiar"
+
+[RPGNameMessage]
+ImposterString="Lo siento, ese nombre ya esta en uso por algún jugador en este servidor."
+NoNameChangeString="Lo siento, solo puedes cambiar tu nombre cuando estás muerto."
+
+[RPGPlayerLevelsMenu]
+DefaultText="Recibiendo Niveles de Jugador del Servidor..."
+WindowName="Nivel de los Jugadores"
+ButtonClose.Caption="Cerrar"
+
+[RPGResetConfirmPage]
+NoButton.Caption="NO"
+ResetDesc.Caption="¡El borrado es PERMANENTE!, ¡PERDERÁS tus niveles!"
+ResetDesc2.Caption="¿Estás SEGURO?"
+YesButton.Caption="SÍ"
+
+[RPGStatsMenu]
+CurrentLevelText="Nivel:"
+MaxText="MAX"
+CostText="Coste:"
+CantBuyText="No disponible"
+AbilityBuyButton.Caption="Comprar"
+AbilityDescButton.Caption="Info"
+AbilityList.Hint="Estas son las habilidades que puedes comprar con los Puntos Disponibles"
+AdrenalineMaxButton.Caption="+"
+AdrenalineMaxSelect.Caption="Máximo de Adrenalina"
+AmmoMaxButton.Caption="+"
+AttackButton.Caption="+"
+AttackSelect.Caption="Mejora del Daño (0,5%)"
+CloseButton.Caption="Cerrar"
+DefenseButton.Caption="+"
+DefenseSelect.Caption="Reducción de Daño (0,5%)"
+EXPLabel.Caption="Experiencia:"
+HealthBonusButton.Caption="+"
+HealthBonusSelect.Caption="Mejora de Salud"
+LevelLabel.Caption="Nivel:"
+LevelsButton.Caption="Nivel de Jugadores"
+MaxAmmoSelect.Caption="Máximo de Munición (%)"
+PointsAvailableSelect.Caption="Puntos Disponibles"
+ResetButton.Caption="Borrar"
+TitleBar.Caption="Menú de Estadísticas"
+WeaponSpeedButton.Caption="+"
+WeaponSpeedSelect.Caption="Velocidad del Arma (%)"
+
+[RW_Energy]
+PostfixPos=" de Energía"
+PrefixNeg="Perdida "
+
+[RW_Force]
+PostfixPos=" de Fuerza"
+
+[RW_Healing]
+PrefixPos=" "
+PostfixPos=" de Salud"
+
+[RW_Infinity]
+PostfixPos=" de Infinidad"
+
+[RW_Luck]
+PrefixPos=" "
+PostfixPos=" de Buena Suerte"
+PostfixNeg=" de Mala Suerte"
+
+[RW_NoMomentum]
+PrefixPos=" "
+PostfixPos=" Robusto"
+
+[RW_Penetrating]
+PrefixPos=" "
+PostfixPos=" Penetrante"
+
+[RW_Piercing]
+PrefixPos=" "
+PostfixPos=" Agujereante"
+
+[RW_Poison]
+PrefixPos=" "
+PostfixPos=" Envenenado"
+
+[RW_Protection]
+PostfixPos=" de Protección"
+

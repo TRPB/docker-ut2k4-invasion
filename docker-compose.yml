@@ -1,0 +1,12 @@
+version: '3'
+services:
+    ut2k4:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "7777:7777/udp"
+            - "6680:80"
+            - "7778:7778/udp"
+        environment:
+            - ADMIN_PASSWORD=test123

@@ -1,0 +1,202 @@
+UT2004RPG v2.2
+Mutador para UT2004
+Creado por Mysterial (mysterial@comcast.net)
+Agradecimientos a:
+Erik: Modelos y pieles de los artefactos
+Lordtarac a.k.a John Malm: Página web de UT2004RPG
+[LIMB]LightBringer, TheDruidXpawX, y todos los jugadores en sus servidores: probar las versiones beta
+TheDruidXpawX: Arma mágica de salud
+Matthias Berthold: Traducción Alemán
+Fobos: Traducción Español
+2/13/06
+
+NOTA A LOS ARMINISTRADORES DE SERVIDOR: ¡Por favor, leeros UT2004RPG_ServerAdminReadme.txt antes de actualizar!
+
+NOTA: Esta versión sobreescribe a las anteriores. No perderás tus datos.
+
+Para instalar la versión .ut2mod, ejecuta UT2004RPG.ut2mod, y se abrirá el instalador del UT2004.
+Para instalar la versión manual (.zip), extrae el contenido del archivo comprimido en tu carpeta de UT2004. Por defecto es C:\UT2004.
+
+Este mutador añade un sistema consistente de niveles de experiencia al UT2004. Las muertes te darán puntos de experiencia para subir de nivel. Tras subir de nivel, consigues una cantidad de puntos (configurables) para usar en tus estadísticas personales, (velocidad del arma, salud, adrenalina, los modificadores de daño) o en las habilidades especiales. Puedes conseguir bonus de Experiencia eliminando a jugadores de mayor nivel que el tuyo, haciendo multimuertes, fiestas mortales, ganando la partida, y (según la configuración de los tipos de juego) completando los objetivos de la partida. Todo esto se guarda en un archivo .ini y se carga en futuras partidas cuando los jugadores se conectan.
+
+Las estadísticas son Velocidad del Arma (%), Mejora de Salud, Máximo de Adrenalina, Mejora del Daño (%), Reducción de Daño (%), y Máximo de Munición. Hay 21 habilidades especiales (aunque se podrían descargar más desde Internet)
+
+Los Bots funcionan correctamente, estos irán escogiendo ciertas estadísticas según las tendencias que tengan (ej: los bots agresivos escogerán principalmente estadísticas orientadas al ataque), e incluso a veces obtendrán habilidades.
+
+Por si todo esto no fuera suficiente, UT2004RPG incluye características mágicas para las armas, y artefactos. Cualquier arma que recojas tiene la posibilidad de convertirse en mágica y conseguir modificadores especiales, como el daño incrementado. Adicionalmente, los artefactos son mejoras repartidas aleatoriamente por todo el mapa y que pueden ser activados para conseguir una habilidad o mejora. Los artefactos consumen Adrenalina cuando están siendo utilizados.
+
+El juego en red está completamente soportado. Los datos del Jugador están protegidos por una ID de jugador única (vinculada a las claves de CD), por tanto estos no podrán ser robados y/o usurpados.
+
+Si utilizas este mutador en el modo de Invasión, la EXP conseguida por eliminar los monstruos es igual al número de puntos que obtienes por matarlos. A los monstruos se les da un nivel igual al doble de daño de su onda de ataque (ataque nivel 6, monstruos nivel 12), y todos sus puntos se distribuyen siempre uniformemente entre Mejora de Daño y Reducción de Daño.
+
+Los vehículos están completamente soportados. Tomarán las ventajas de tus estadísticas cuando entres en ellos. En Asalto, a las torretas no tripuladas (por ejemplo, las torretas en AS-Mothership) se les da un nivel igual al del jugador de menor nivel de la partida.
+
+Hay un menú de configuración para UT2004RPG donde puedes cambiar muchas de las configuraciones del juego. Para acceder a él, ve a la Pestaña de Mutadores, añade UT2004RPG a tu lista de mutadores, y haz clic en el botón de Configurar Mutador. Mueve el ratón por encima de cualquier opción para obtener información detallada acerca de lo que hace.
+
+El código fuente de las habilidades, armas mágicas y artefactos ha sido incluido en UT2004\UT2004RPG\Classes\ para que los programadores puedan crear los suyos. Todo lo que necesitas hacer es crear un paquete con tu nueva clase de habilidad y luego añadir los nombres de la clase al final del archivo UT2004RPG.ini como se ha hecho con las habilidades ya incluidas.
+
+Preguntas mas Frecuentes (FAQ)
+P: ¿Cual es el Máximo Nivel? ¿Y el Máximo de Estadísticas?
+-O-
+P: ¡UT2004RPG.ini solo contiene información para 18 niveles en el .ini! ¿es ese el Máximo Nivel?
+R: UT2004RPG no tiene un nivel máximo o un limite máximo de estadísticas. Podrás subir tantos niveles como puedas. En el .ini, todos los niveles por encima del nivel mas alto registrado requerirán tener la EXP del nivel mas alto registrado.
+
+P: ¿Por qué no puedo obtener EXP puntuando en Capturar la Bandera, Dominación Doble, o en Carrera de Bombardeo?
+R: UT2004RPG requiere tipos de juego que utilicen la función ScoreObjective() para poder detectar eventos de puntuación. Desafortunadamente, Capturar la Bandera, Dominación Doble, y Carrera de Bombardeo no fueron codificados para utilizar esa función. Acometida y Asalto si la utilizan, así como otros tipos de juego personalizados.
+
+P: ¿Los jugadores obtienen EXP eliminando a sus compañeros de equipo?
+R: No.
+
+P: ¡En todas las habilidades me aparece "No disponible"! ¿Pero esto que es?
+R: Las habilidades tienen requisitos, como sobrepasar un cierto nivel o que una estadística sobrepase un cierto número. Puedes encontrar los requisitos de cada habilidad seleccionándola y haciendo clic en el botón Info.
+
+P: El juego me da tirones cuando estoy con UT2004RPG, sin embargo esto no ocurre cuando juego sin UT2004RPG.
+R: Esto se debe probablemente al autoguardado, cuando UT2004RPG graba en el disco. Puedes probar a desactivar el autoguardado (ponerlo en 0), pero te arriesgas a no guardar los datos si sales del juego directamente a través del menú de la partida. Esto es un fallo del UT2004. Cuando el autoguardado esté desactivado, sal siempre de la partida al menú principal y ya luego desde el menú principal sales del juego.
+
+P: ¿Puedo utilizar mis partidas guardadas de UT2003RPG con UT2004RPG?
+R: Lo siento, no. Las partidas guardadas de UT2004RPG son distintas. El nuevo método es más rápido y más extensible, pero no es compatible con la versión antigua.
+
+PROBLEMAS CONOCIDOS:
+-Cuando golpeas a alguien con un arma Penetrante, podría parecer que surgen dos rayos, uno que golpea al objetivo y otro que lo atraviesa. También podría parecer que la direcciones de los dos rayos son diferentes. Esto es un fallo en el sistema xEmitter DE usado en la mayor parte de los efectos de las armas. Sin embargo, a pesar de lo que parezca, tu arma siempre está disparando exactamente donde se supone que debe ser.
+-Un par de opciones en el menú de configuración del mutador requieren tener instalado el primer parche de actualización de UT2004 para ser editables.
+
+Puedes encontrar la última versión de UT2004RPG en la página web oficial: http://mysterial.linuxgangster.org/UTRPG/
+
+Siéntete libre de comentar lo que quieras acerca de este mod en mis foros de http://mysterial.linuxgangster.org/forum/ o envíame un correo-e.
+
+LISTA DE ARMAS MÁGICAS:
+-Daño: Un arma sin texto, solo un + calificándola (ej. "Lanzacohetes +3") hace un 10% más de daño por cada + (por tanto un Bio Rifle +3 hace un 30% más de daño)
+-Protección: recibes un 10% menos de daño por cada + mientras sostienes este arma.
+-Fuerza: Los Proyectiles disparados por este arma son un 20% mas rápidos por cada +
+-Agujereante: El daño de este arma ignora los escudos
+-Penetrante: Los disparos realizados por este arma (en modo zoom) atraviesan a cualquier jugador que golpeen (al igual que hace el rayo del zoom instagib)
+-Infinidad: Este arma tiene munición infinita
+-Robusta: El fuego enemigo no puede empujarte alrededor mientras sostienes este arma
+-Suerte: Mientras sostienes este arma, la fortuna te sonríe. ¡Objetos útiles se materializarán en el aire justo enfrente tuya!
+-Desgracia: No eres tan afortunado con este arma. Por alguna razón, los objetos parecen reventar espontáneamente justo antes de cogerlos.
+-Envenenada: Este arma envenena a aquel al que golpea, causándole un daño adicional durante un tiempo
+-Energía/Perdida de Energía: Este arma da/toma el 2% de adrenalina del daño causado por ella, por cada +/-
+-Salud: El daño que te haces a ti mismo y el daño que haces a tu equipo con este arma, cura en lugar de dañar. La cantidad de curación es igual a un 5% del daño que habría estado haciendo por cada +
+
+LISTA DE ARTEFACTOS: (Por defecto, pulsa los interrogantes (teclado español) para ir intercambiando el artefacto, y la tecla U para usarlo. Los artefactos consumen adrenalina mientras se están usando)
+-Globo de Invulnerabilidad: Modo Dios en comando. Pero ten cuidado - ¡tu adrenalina se consume rápido!
+-Triple Daño: Este fabuloso artefacto es el hermano mayor del doble daño
+-Botas de Vuelo: ¡Vuela, vuela lejos!
+-Vara de Rayos: Este artefacto atacará a tus enemigos con rayos débiles pero de disparo rápido, tanto tiempo como estén ellos en tu vista. La cantidad de adrenalina utilizada es proporcional al numero de objetivos en alcance.
+-Teletransportador: Este primo del translocalizador te transportará a un punto aleatorio
+-Conjuro de Invocación: Este artefacto invocará un monstruo para ayudarte. Este te seguirá y se mantendrá alrededor tuya atacando a cualquier enemigo que vea. La cantidad de adrenalina usada depende del monstruo invocado (el cual es escogido aleatoriamente)
+
+
+Changes from v2.1
+-Fixed an exploit that allowed a player using the invulnerability artifact to stay invulnerable forever
+-Fixed Adrenal Drip ending if the owner used the Redeemer guided fire
+-Added German translation
+
+Changes from v2.0
+-Fixed bug that caused spawning nonmagical weapons while magic weapons were on to be very slow (performance)
+-Fixed headshot bonus EXP being awarded for team damage
+-Fixed vampire giving 1 health for hits that don't do any damage
+-Fixed healing magic weapon never identifying itself
+-Adrenal Drip no longer regenerates adrenaline while the owner has an active artifact
+-More checks to prevent Ghost selecting invalid points
+-RPG HUD is now properly hidden when the rest of the HUD is (i.e. when using "togglescreenshotmode")
+-It is now possible to suicide when being affected by Ghost by using the command "mutate ghostsuicide" or by binding "Suicide Ghost" to a key in the Controls menu
+-Fixed ammo issues in netplay when magic weapons are off
+-Weapons of Evil's Sentinel Deployer can no longer be magical because the magic weapon code breaks its upgrade menu
+-Adjusted Vampirism ability so that the health cap is applied after all abilities, so that if the victim has a matching Retaliation ability that does less or equal damage than the Vampirism effect heals, the attacker will not lose health unless he/she was already above the maximum amount Vampirism will heal
+-Ghost ability is now regenerated after an Invasion wave
+-Slightly increased Ghost movement speed
+-Changed artifact configuration in UT2004RPG.ini so that a Chance can be specified for each artifact (like magic weapons)
+-Added ConfigMonsterList array that, if specified in UT2004RPG.ini (under [UT2004RPG.MutUT2004RPG]), will be used for summoning abilities instead of the automatically generated monster list
+-Retaliation will no longer kill attackers by itself
+-Fixed a no weapon/weapon not firing/weapon stuck firing bug (most frequently occurred when returning from a guided Redeemer missle)
+-Fixed weapons with a damage bonus doing 1 point of damage to teammates even when team damage is off
+-Fixed a zombie pawn getting left around if a player is in Ghost mode when an Invasion wave ends and revives all the players
+
+Changes from v1.2
+-Fixed Cautiousness self-healing exploits
+-Fixed Max Ammo stat when magic weapons are turned off
+-Fixed Speed Switcher ability when magic weapons are turned off
+-Fixed bots getting listed as the highest level player when Fake Bot Levels is on
+-Capped bot levels generated in Fake Bot Levels mode to a maximum of 25 levels above the lowest level player
+-Fixed Ultima not giving EXP for kills if its owner didn't respawn by the time it went off
+-Fixed Teleporter and Summoning Charm sometimes using adrenaline without triggering the effect
+-By default, the EXP required for each level now increases by 5 per level forever instead of being capped at 150
+-Translocator can no longer be magical because it was confusing the bots
+-Increased the size of the EXP bar so the numbers are more readable
+-Level/EXP display now adjusts its position/size if necessary to show really high levels
+-Added Level/EXP text to stats menu
+-Ghost ability causes its owner to drop the flag
+-Fixed superweapons being replenished after each Invasion wave if magic weapons were enabled
+-Added SuperAmmoClassNames array to UT2004RPG.ini that lists any additional ammo types that should be considered as belonging to a superweapon
+-Fixed UDamage Reward mutator causing infinite duration UDamage pickups to be dropped if the victim was using a Triple Damage artifact
+-EXP is now awarded for destroying Assault turrets
+-EXP for attacking monsters is now awarded by damage and not by kills, so that multiple players attacking a monster will share the EXP (killer always gets at least 1 EXP)
+-Damage/kill experience is now shared between linked players
+-Changing teams now kills all of that player's summoned monsters
+-Changed the summoned monster tinted skin to an emitter effect
+-Fixed some issues with artifacts and vehicles
+-Added Healing magic weapon, courtesy of Druid
+-Restored "Bot Bonus Levels" option since some people prefer it to "Fake Bot Levels"
+-Fixed Awareness not drawing health bars for monsters on the local player's team in listen/standalone games
+-Ghost no longer activates when killed by falling off of AS-Convoy
+-Fixed magic weapon effects being applied to damage that wasn't caused by a weapon
+-Fixed summoned monsters not benefiting from summoner's Health Bonus
+-Fixed "Reset Player Data Next Game" option not resetting data for players that actually played in the next game
+
+Changes from v1.1
+-Fixed Jailbreak
+-Fixed ChaosUT
+-Failsafe to prevent crashes when playing any other gametypes that destroy pawns without killing them
+-Fixed random undesired switching to best weapon when a magic weapon has no ammo (really this time)
+-Replaced "Bot Bonus Levels" with "Fake Bot Levels" which turns off saving of bot data and instead simply gives them a level near that of the human player(s)
+-Added Ironman mode. If activated, only the winning player/team's data is saved - losers lose the EXP they gained that match (NOTE: In Invasion, players that leave the server midway still get their data saved if the remaining players win)
+-Added "Use Official Redirect Server" option. This option, on by default, causes servers to redirect clients to a special official redirect server for UT2004RPG files (all other files continue to use whatever redirect the server admin has set up)
+
+Changes from v1.0
+-French translation
+-In Invasion, the monsters are now auto adjusted based on the lowest level player that remains alive (previously, it was the lowest level player, period)
+-Fixed Invasion monsters only getting levels equal to the Wave instead of levels equal to the Wave times two
+-Fixed players killed by enemy Invasion monsters not dropping any artifacts they were carrying
+-Fixed bug where if a magical weapon with an overlay effect ran out of ammo on a net client, it would constantly force the owner's weapon to switch to that player's highest priority weapon
+-Fixed custom crosshairs with magical weapons
+-Fixed super health max not being updated immediately when Health Bonus stat is increased (it was waiting until next respawn)
+-Fixed entering/exiting a vehicle with active artifacts would cause those artifacts to stop draining adrenaline
+-Fixed player's pawn being left around when becoming a spectator
+-Fixed ability level in stats menu not always updating when buying an ability in an instant action game
+-Fixed ability list in stats menu resetting to the top after buying something
+-Fixed Assault
+-Players always get at least 1 experience point for completing a game objective
+-The default EXP for winning a match is now 50 (was 10)
+-Decreased the default EXP bonus for killing players of a higher level
+-Summoned monsters suicide if their Master becomes a spectator or leaves the game
+-Summoned monsters only celebrate for their own kills, not their Master's
+-Summoned monsters now ignore enemy monsters of the same species
+-Fixed infinite recursion crash if a player's own monster knocked the player off the level
+-Fixed players being affected by Ghost at the same time the game does a round reset getting screwed up
+-Fixed throwing a weapon when having another of the same type but different magical properties would not properly reduce ammo
+-No EXP is given for spawn kills
+-Possible fix for summoned monsters still not always having tinted skins
+-Made summoned monsters' tinted skin in team games be a little more red or blue
+	NOTE: You can adjust this in UT2004RPG.ini by creating a new section called [UT2004RPG.FriendlyMonsterSkinner] and adding the lines:
+	TeamColor[0]=(R=255,B=150,G=150,A=255)
+	TeamColor[1]=(R=150,B=255,G=150,A=255)
+	Substituting your own values for R, G, and B within the range 0 to 255.
+
+Changes from UT2003RPG v4.0
+-Fixed exchanged fire modes weapon setting not working on magic weapons
+-Fixed Denial level 2 not working properly with the minigun if Magical Starting Weapons option was on
+-Fixed Damage magic weapon (those with only a plus/minus rating) changing the weapon's damage by the wrong amount
+-Fixed RW_Infinity Accessed None
+-Fixed Weapons of Evil's PIC having broken zoom if it was magical
+-Fixed infinite recursion crashes with Arena mutator and Mutant gametype
+-Fixed Rocket Launcher couldn't do homing if it was magical
+-Fixed Cautiousness ability could heal you in an instant action game if you were playing at a low bot skill level
+-Summoning Charm limited to 4 simultaneous monsters
+-Artifacts now display a message when you try to use one without sufficient Adrenaline
+-EXP is now awarded for First Blood
+-Fixed some hacks that are no longer necessary due to changes from UT2003 to UT2004
+-Bonus experience from multikills is now capped to 100 per kill
+-Weapon Speed stat capped to 1000 by default for performance reasons
+-Damage Bonus and Damage Reduction now only give 0.5% per point instead of 1% per point
+-Adjusted experience table to account for the additional EXP bonuses that are now available
